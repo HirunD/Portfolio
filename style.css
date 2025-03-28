@@ -6,16 +6,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif; /* Use Montserrat */
+    font-family: 'Montserrat', sans-serif;
     color: #e0e0e0;
 }
 
 body {
-    background: linear-gradient(135deg, #1c1e2e, #3a3c4d); /* Nice Gradient */
+    background: linear-gradient(135deg, #1c1e2e, #3a3c4d);
     color: white;
-}
-html{
-    scroll-behavior: smooth;
 }
 
 .section-padding {
@@ -24,18 +21,18 @@ html{
 
 /* Added spacing between sections */
 .section-spacing {
-    margin-top: 60px; /* Adjust as needed */
+    margin-top: 60px;
 }
 
 /* Glassmorphism Effect */
 .glass {
-    background: rgba(255, 255, 255, 0.15); /* Increased opacity for more visibility */
+    background: rgba(255, 255, 255, 0.15);
     border-radius: 15px;
     padding: 20px;
-    backdrop-filter: blur(10px); /* Slightly reduced blur */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Reduced shadow */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
-    max-width: 1200px; /* Reduced Max width */
+    max-width: 1200px;
 }
 
 /* Navbar */
@@ -47,15 +44,15 @@ html{
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgba(255, 255, 255, 0.1); /* Add a subtle glass background */
-    backdrop-filter: blur(5px); /* Add a subtle blur effect */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
 }
 
 .navbar .logo a {
     color: #fff;
     font-size: 28px;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif; /* Use Montserrat */
+    font-family: 'Montserrat', sans-serif;
 }
 
 .nav-links {
@@ -72,7 +69,7 @@ html{
     text-decoration: none;
     font-size: 18px;
     transition: 0.3s;
-    font-family: 'Montserrat', sans-serif; /* Use Montserrat */
+    font-family: 'Montserrat', sans-serif;
 }
 
 .nav-links a:hover {
@@ -89,28 +86,29 @@ html{
     background: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbm5vZmV5a2I4ZGV4MnRxb2djemFwcWh4djVkaHducmR4MmY5bzkxeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qBqPmWp4YRPzWwG8Xn/giphy.gif);
     background-size: cover;
     background-position: center;
-    /* Added glass effect */
-    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
-    backdrop-filter: blur(5px); /* Subtle blur */
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
 }
 
 .hero-content {
     max-width: 800px;
-    background: linear-gradient(to bottom, rgba(200, 220, 255, 0.15), rgba(255, 255, 255, 0.1)); /* Blueish gradient */
-    padding: 30px; /* Add padding for better look */
-    border-radius: 15px; /* Match hero glass radius */
+    background: linear-gradient(to bottom, rgba(200, 220, 255, 0.15), rgba(255, 255, 255, 0.1));
+    padding: 30px;
+    border-radius: 15px;
 }
 
 .hero h1 {
     font-size: 4rem;
-    font-family: 'Montserrat', sans-serif; /* Use Montserrat */
+    font-family: 'Montserrat', sans-serif;
     margin-bottom: 20px;
+    line-height: 1.2; /* Added line-height for better text wrapping */
 }
 
 .hero p {
     font-size: 1.4rem;
-    font-family: 'Montserrat', sans-serif; /* Use Montserrat */
+    font-family: 'Montserrat', sans-serif;
     margin-bottom: 30px;
+    line-height: 1.6; /* Added line-height for better text wrapping */
 }
 
 .btn {
@@ -119,7 +117,7 @@ html{
     padding: 12px 30px;
     text-decoration: none;
     border-radius: 8px;
-    font-family: 'Montserrat', sans-serif; /* Use Montserrat */
+    font-family: 'Montserrat', sans-serif;
     display: inline-block;
     transition: 0.3s;
 }
@@ -141,7 +139,7 @@ html{
     border-radius: 20px;
     margin: 5px;
     color: #bbbbbb;
-    font-family: 'Montserrat', sans-serif; /* Use Montserrat */
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Projects Section */
@@ -167,7 +165,7 @@ html{
 
 .project h3, .project p {
     padding: 10px;
-    font-family: 'Montserrat', sans-serif; /* Use Montserrat */
+    font-family: 'Montserrat', sans-serif;
 }
 
 .project-link {
@@ -177,37 +175,37 @@ html{
     background: #ff6347;
     color: white;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif; /* Use Montserrat */
+    font-family: 'Montserrat', sans-serif;
 }
 
 .project-animate {
-    transform: scale(1.05); /* Adds a slight zoom on click */
+    transform: scale(1.05);
 }
 
 /* Video Grid */
 .video-grid {
     display: grid;
-    grid-template-columns: 1fr; /* One column per row */
-    gap: 40px; /* Increased gap */
-    margin-top: 40px; /* Increased margin */
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-top: 40px;
 }
 
 .video-item {
     text-align: center;
-    margin-bottom: 20px; /* Added margin between video items */
+    margin-bottom: 20px;
 }
 
 .video-item h3 {
-    margin-bottom: 15px; /* Increased margin */
+    margin-bottom: 15px;
 }
 
 .video-grid iframe {
-    width: 80%; /* Reduced width */
-    max-width: 600px; /* Added max width */
-    aspect-ratio: 16 / 9; /* Maintain 16:9 aspect ratio */
+    width: 80%;
+    max-width: 600px;
+    aspect-ratio: 16 / 9;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    border: none; /* Remove iframe border */
+    border: none;
 }
 
 /* Contact Section */
@@ -224,13 +222,13 @@ html{
     border: none;
     border-radius: 5px;
     color: #e0e0e0;
-    font-family: 'Montserrat', sans-serif; /* Use Montserrat */
+    font-family: 'Montserrat', sans-serif;
 }
 
 .contact-form textarea {
     resize: vertical;
     height: 150px;
-    font-family: 'Montserrat', sans-serif; /* Use Montserrat */
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Mobile Navigation */
@@ -239,10 +237,10 @@ html{
     font-size: 24px;
     cursor: pointer;
     color: white;
-    font-family: 'Montserrat', sans-serif; /* Use Montserrat */
+    font-family: 'Montserrat', sans-serif;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 934px) {
     .nav-links {
         display: none;
         flex-direction: column;
@@ -265,7 +263,93 @@ html{
 }
 
 .about-text {
-    line-height: 1.8; /* Increase line spacing for better readability */
-    font-size: 1.1em; /* Slightly increase font size */
-    color: #ccc; /* Adjust text color if needed */
+    line-height: 1.8;
+    font-size: 1.1em;
+    color: #ccc;
+}
+
+/* Responsive adjustments */
+@media (max-width: 934px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .video-grid iframe {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .nav-links li {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .navbar .logo a {
+        font-size: 24px;
+    }
+
+    .nav-links li {
+        margin: 0 8px;
+    }
+
+    .video-grid {
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    .section-padding {
+        padding: 40px 15px;
+    }
+}
+
+/* Additional adjustments for hero section */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2.8rem; /* Further reduce font size */
+    }
+
+    .hero p {
+        font-size: 1.1rem; /* Further reduce font size */
+    }
+}
+
+@media (max-width: 400px) {
+    .hero h1 {
+        font-size: 2.5rem; /* Further reduce font size */
+    }
+
+    .hero p {
+        font-size: 1rem; /* Further reduce font size */
+    }
 }
