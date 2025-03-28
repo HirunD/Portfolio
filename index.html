@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | HirunD</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header class="navbar glass">
+        <div class="logo"><a href="#">HirunD</a></div>
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#videos">Videos</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content glass">
+            <h1 id="type"></h1>
+            <p id="type2"></p>
+            <a href="#projects" id="explore" class="btn" style="display: none;">Explore My Creations</a>
+        </div>
+    </section>
+
+    <section id="about" class="glass section-padding section-spacing">
+        <h2>About Me</h2>
+        <p class="about-text">Hey there! I’m Hirun Dilshan Wickramasinghe—a coder, designer, and all-around tech enthusiast. Whether I’m crafting sleek websites, designing eye-catching graphics, or diving deep into gaming tournaments, I love bringing ideas to life.
+
+            When I’m not glued to my screen, you might find me brainstorming the next big project, organizing epic events, or simply enjoying a good cup of coffee while plotting world domination (just kidding… or am I?).
+            
+            Stick around, check out my work, and let’s create something awesome together! 🚀</p>
+        <div class="skills">
+            <div class="skill glass">Web Development</div>
+            <div class="skill glass">UI/UX Design</div>
+            <div class="skill glass">Video Editing</div>
+            <div class="skill glass">Creative Coding</div>
+        </div>
+    </section>
+
+    <section id="projects" class="glass section-padding section-spacing">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project glass" onclick="animateProject(this)">
+                <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZm1weTJhbmxpMGZlejVuanY1eW5yMWYwdjlqY2x2NnZqNTlmY2l3biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Y4CshjtL8I3hQfaM9w/giphy.gif" alt="Science Day Animation">
+                <h3>Science Day Animation</h3>
+                <p>An immersive animation blending Greek mythology with Arcane's art style, crafted using Unreal Engine, After Effects, Premiere Pro, and Blender.</p>
+                <a href="https://youtu.be/efsaYkwLvmQ" class="project-link">View Project</a>
+            </div>
+            <div class="project glass" onclick="animateProject(this)">
+                <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2VvNXB5bTk4d2d1eG90Y214dWJqbXZyb2Ruejdkd2dvMXJjemhtdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/FKX94IhfuzAqQPbBGo/giphy.gif" alt="Mirage Band Intro">
+                <h3>Mirage Band Intro</h3>
+                <p>An intricate intro video for Mirage Band, a complex composition of motion graphics and visual effects created in After Effects.</p>
+                <a href="https://youtu.be/2k_JrEJnFBw" class="project-link">View Project</a>
+            </div>
+            <div class="project glass" onclick="animateProject(this)">
+                <img src="/img/guththilayaneni.webp" alt="Guththilayaneni Music Video">
+                <h3>Guththilayaneni Music Video</h3>
+                <p>A professional music video for a major artist, shot and edited with Premiere Pro, featuring sophisticated color grading and visual storytelling.</p>
+                <a href="https://youtu.be/IuHhWJdRCzs?si=-oVT25eH8QHldeba" class="project-link">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="videos" class="glass section-padding section-spacing">
+        <h2>My Video Creations</h2>
+        <div class="video-grid">
+            <div class="video-item">
+                <h3>Science Day Animation</h3>
+                <iframe  src="https://www.youtube.com/embed/efsaYkwLvmQ?si=siKUeS0gRSq6ydDF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="video-item">
+                <h3>Mirage Band Intro</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2k_JrEJnFBw?si=AyA6QbNJ4KjM8naA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="video-item">
+                <h3>Guththilayaneni Music Video</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/IuHhWJdRCzs?si=19NV11Vc-bEfMNPM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="video-item">
+                <h3>Video 4 Title</h3>
+                <iframe class="" src="https://www.youtube.com/embed/efsaYkwLvmQ?si=lAg9cudp8xNecjLB" allowfullscreen></iframe>
+            </div>
+            <div class="video-item">
+                <h3>Video 5 Title</h3>
+                <iframe class="" src="https://www.youtube.com/embed/efsaYkwLvmQ?si=lAg9cudp8xNecjLB" allowfullscreen></iframe>
+            </div>
+            <div class="video-item">
+                <h3>Video 6 Title</h3>
+                <iframe class="" src="https://www.youtube.com/embed/efsaYkwLvmQ?si=lAg9cudp8xNecjLB" allowfullscreen></iframe>
+            </div>
+            <div class="video-item">
+                <h3>Video 7 Title</h3>
+                <iframe class="" src="https://www.youtube.com/embed/efsaYkwLvmQ?si=lAg9cudp8xNecjLB" allowfullscreen></iframe>
+            </div>
+            <div class="video-item">
+                <h3>Video 8 Title</h3>
+                <iframe class="" src="https://www.youtube.com/embed/efsaYkwLvmQ?si=lAg9cudp8xNecjLB" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
