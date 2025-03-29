@@ -1,7 +1,7 @@
 var i = 0;
 var i2 = 0;
 var txt = `Hi, I'm Hirun Dilshan Wickramasinghe`;
-var txt2 = `I'm a passionate developer with experience in web development and coding. Welcome to my portfolio!`;
+var txt2 = `I develop web, 3D, video, and code projects. Explore my creative portfolio!`;
 
 var speed = 50;
 
@@ -19,7 +19,7 @@ function typeWriter2() {
   if (i2 < txt2.length) {
     document.getElementById("type2").innerHTML += txt2.charAt(i2);
     i2++;
-    setTimeout(typeWriter2, 25);
+    setTimeout(typeWriter2, 15);
   } else {
     document.getElementById("explore").style.display = "inline-block";
   }
