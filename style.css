@@ -7,30 +7,29 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    color: #e0e0e0;
+    color: #d1d1d1;
 }
 
 body {
-    background: linear-gradient(135deg, #1c1e2e, #3a3c4d);
-    color: white;
+    background: linear-gradient(135deg, #000000, #fffcfc);
+    color: #d1d1d1;
 }
 
 .section-padding {
     padding: 50px 20px;
 }
 
-/* Added spacing between sections */
 .section-spacing {
     margin-top: 60px;
 }
 
 /* Glassmorphism Effect */
 .glass {
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(30, 30, 30, 0.3);
     border-radius: 15px;
     padding: 20px;
     backdrop-filter: blur(10px);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     margin: 20px auto;
     max-width: 1200px;
 }
@@ -44,12 +43,12 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgba(255, 255, 255, 0.1);
+    background: linear-gradient(to bottom, rgba(60, 60, 60, 0.7), rgba(10, 10, 10, 0.7)); /* High contrast gradient */
     backdrop-filter: blur(5px);
 }
 
 .navbar .logo a {
-    color: #fff;
+    color: #d1d1d1;
     font-size: 28px;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
@@ -65,7 +64,7 @@ body {
 }
 
 .nav-links a {
-    color: #fff;
+    color: #d1d1d1;
     text-decoration: none;
     font-size: 18px;
     transition: 0.3s;
@@ -86,13 +85,13 @@ body {
     background: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbm5vZmV5a2I4ZGV4MnRxb2djemFwcWh4djVkaHducmR4MmY5bzkxeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qBqPmWp4YRPzWwG8Xn/giphy.gif);
     background-size: cover;
     background-position: center;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(30, 30, 30, 0.3);
     backdrop-filter: blur(5px);
 }
 
 .hero-content {
     max-width: 800px;
-    background: linear-gradient(to bottom, rgba(200, 220, 255, 0.15), rgba(255, 255, 255, 0.1));
+    background: linear-gradient(to bottom, rgba(70, 70, 70, 0.7), rgba(5, 5, 5, 0.7)); /* High contrast gradient */
     padding: 30px;
     border-radius: 15px;
 }
@@ -101,14 +100,14 @@ body {
     font-size: 4rem;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 20px;
-    line-height: 1.2; /* Added line-height for better text wrapping */
+    line-height: 1.2;
 }
 
 .hero p {
     font-size: 1.4rem;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 30px;
-    line-height: 1.6; /* Added line-height for better text wrapping */
+    line-height: 1.6;
 }
 
 .btn {
@@ -138,7 +137,7 @@ body {
     padding: 8px 15px;
     border-radius: 20px;
     margin: 5px;
-    color: #bbbbbb;
+    color: #a0a0a0;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -153,7 +152,7 @@ body {
 .project {
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
 }
 
@@ -221,7 +220,8 @@ body {
     margin-bottom: 15px;
     border: none;
     border-radius: 5px;
-    color: #e0e0e0;
+    color: #d1d1d1;
+    background: rgba(50, 50, 50, 0.5);
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -245,7 +245,7 @@ body {
         display: none;
         flex-direction: column;
         position: absolute;
-        background: rgba(22, 23, 38, 0.9);
+        background: rgba(30, 30, 30, 0.9);
         width: 100%;
         left: 0;
         top: 60px;
@@ -265,7 +265,7 @@ body {
 .about-text {
     line-height: 1.8;
     font-size: 1.1em;
-    color: #ccc;
+    color: #a0a0a0;
 }
 
 /* Responsive adjustments */
@@ -333,23 +333,22 @@ body {
     }
 }
 
-/* Additional adjustments for hero section */
 @media (max-width: 600px) {
     .hero h1 {
-        font-size: 2.8rem; /* Further reduce font size */
+        font-size: 2.8rem;
     }
 
     .hero p {
-        font-size: 1.1rem; /* Further reduce font size */
+        font-size: 1.1rem;
     }
 }
 
 @media (max-width: 400px) {
     .hero h1 {
-        font-size: 2.5rem; /* Further reduce font size */
+        font-size: 2.5rem;
     }
 
     .hero p {
-        font-size: 1rem; /* Further reduce font size */
+        font-size: 1rem;
     }
 }
