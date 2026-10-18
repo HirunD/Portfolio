@@ -34,4 +34,41 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     typing();
+
+    // 3. Live Website Previews
+    const screens = document.querySelectorAll('.browser-screen');
+
+    // Scale the desktop-width iframe down to fit its frame
+    const fit = (screen) => {
+        const frame = screen.querySelector('iframe');
+        const scale = screen.clientWidth / 1440;
+        frame.style.transform = `scale(${scale})`;
+        frame.style.height = `${screen.clientHeight / scale}px`;
+    };
+    const resizer = new ResizeObserver(entries => entries.forEach(e => fit(e.target)));
+
+    // Only load a site once it scrolls near the viewport
+    const loader = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            const frame = entry.target.querySelector('iframe');
+            frame.src = frame.dataset.src;
+            loader.unobserve(entry.target);
+        });
+    }, { rootMargin: '300px' });
+
+    screens.forEach(screen => {
+        resizer.observe(screen);
+        loader.observe(screen);
+
+        // Click to interact; leaving the frame locks it again so page scrolling isn't hijacked
+        screen.querySelector('.screen-overlay').addEventListener('click', () => {
+            screen.classList.add('active');
+            screen.querySelector('iframe').removeAttribute('tabindex');
+        });
+        screen.addEventListener('mouseleave', () => {
+            screen.classList.remove('active');
+            screen.querySelector('iframe').setAttribute('tabindex', '-1');
+        });
+    });
 });
