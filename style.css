@@ -719,3 +719,9 @@ em { font-family: var(--serif); font-style: italic; font-weight: 400; }
     .reveal { opacity: 1; transform: none; }
     .statement .w { color: var(--text); }
 }
+
+/* ---------- print / PDF ---------- */
+@media print {
+    .reveal, .browser-screen.loading iframe { opacity: 1 !important; transform: none !important; }
+    * { animation: none !important; transition: none !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
