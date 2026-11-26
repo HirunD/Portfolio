@@ -4,422 +4,470 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./img/HirunD.ico">
-    <title>HirunD | Creative Technologist</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <title>Hirun Dilshan Wickramasinghe — Creative Technologist</title>
+    <meta name="description" content="Portfolio of Hirun Dilshan Wickramasinghe, a creative technologist from Galle, Sri Lanka, working across editing, 3D previz, LED-wall visuals and the web.">
+    <meta name="theme-color" content="#0c0b0a">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="logo">Hirun<span>D</span></div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#web">Web</a></li>
-            <li><a href="#projects">Work</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="cv1/">CV</a></li>
-        </ul>
-    </nav>
+    <a class="skip" href="#prologue">Skip to content</a>
 
-    <header id="home" class="hero">
-        <div id="particles-js"></div>
-        <div class="hero-content">
-            <h1 id="type"></h1>
-            <p id="type2" class="sub-hero"></p>
-           <div class="hero-btns">
-    <a href="https://wa.me/94768088170?text=Hi%20Hirun!%20I'd%20like%20to%20talk%20about%20a%20project." class="btn-primary" target="_blank">Get in Touch</a>
-    <a href="#projects" class="btn-secondary">View My Work</a>
-</div>
+    <!-- ============ NAV ============ -->
+    <header class="nav">
+        <a href="#top" class="nav-mark" aria-label="Back to top">Hirun<em>D</em></a>
+        <p class="nav-now mono" aria-live="polite"><span id="now-num">00</span><span class="sep">/</span><span id="now-title">Cold Open</span></p>
+        <div class="nav-right">
+            <a href="cv/" class="nav-link">CV</a>
+            <button class="nav-index" id="index-btn" type="button" aria-expanded="false" aria-controls="index-menu">
+                <span>Index</span><i aria-hidden="true"></i>
+            </button>
         </div>
     </header>
 
-    <section id="about" class="section">
-        <div class="section-container">
-            <h2 class="section-label">01 // About Me</h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p>I’m Hirun Dilshan Wickramasinghe—a coder, designer, and tech enthusiast. I specialize in crafting sleek websites, high-end motion graphics, and immersive 3D environments.</p>
-                </div>
-                <div class="skills-list">
-                    <span>Web Development</span><span>UI/UX Design</span><span>Video Editing</span>
-                    <span>Motion Graphics</span><span>3D Animation</span><span>LED Wall / VJ</span><span>Composition</span>
-                </div>
+    <!-- Full-screen chapter index -->
+    <nav class="index-menu" id="index-menu" aria-label="Chapters" hidden>
+        <ol>
+            <li><a href="#prologue"><span class="mono">00</span>Prologue</a></li>
+            <li><a href="#the-cut"><span class="mono">I</span>The Cut</a></li>
+            <li><a href="#the-stage"><span class="mono">II</span>The Stage</a></li>
+            <li><a href="#the-screen"><span class="mono">III</span>The Screen</a></li>
+            <li><a href="#the-feed"><span class="mono">IV</span>The Feed</a></li>
+            <li><a href="#credits"><span class="mono">V</span>Credits</a></li>
+            <li><a href="#contact"><span class="mono">→</span>Contact</a></li>
+        </ol>
+    </nav>
+
+    <!-- Timecode HUD -->
+    <div class="hud mono" aria-hidden="true">
+        <span class="hud-tc">TC <b id="tc">00:00:00:00</b></span>
+        <div class="hud-track" id="hud-track"><i id="hud-fill"></i></div>
+        <span class="hud-fps">25 FPS</span>
+    </div>
+
+    <main id="top">
+
+        <!-- ============ COLD OPEN ============ -->
+        <section class="open" data-chapter="00" data-title="Cold Open">
+            <div class="open-meta mono reveal">
+                <span>Portfolio — Vol. 2026</span>
+                <span>Galle, Sri Lanka · <span id="clock">--:--</span></span>
+                <span class="status"><i></i>Open to design roles</span>
             </div>
-        </div>
-    </section>
 
-    <section id="experience" class="section">
-        <div class="section-container">
-            <h2 class="section-label">02 // Professional Experience</h2>
-            <div class="timeline">
-                
-                <div class="timeline-item highlight">
-                    <div class="time">2025 - Present</div>
-                    <div class="logo-wrapper"><img src="./img/fern.jpg" alt="Fern" class="company-logo"></div>
-                    <div class="detail">
-                        <h3>Creative Technologist <span class="company">@ Fern (Events)</span></h3>
-                        <p>3D Previz, Motion Graphics, and VJing/LED Wall handling for live events.</p>
-                    </div>
-                </div>
+            <h1 class="open-name">
+                <span class="l1 reveal">Hirun Dilshan</span>
+                <span class="l2 reveal">Wickramasinghe</span>
+            </h1>
 
-                <div class="timeline-item">
-                    <div class="time">2025 - Present</div>
-                    <div class="logo-wrapper"><img src="./img/rtsl.jpg" alt="Realtalk" class="company-logo"></div>
-                    <div class="detail">
-                        <h3>Video Editor <span class="company">@ Realtalk Media</span></h3>
-                        <p>Creating content for brands like Goya, Gold, Kumarika, and ITN.</p>
-                    </div>
-                </div>
+            <figure class="open-portrait reveal">
+                <img src="img/hirun.png" alt="Portrait of Hirun Dilshan Wickramasinghe, lit from behind in warm tungsten light" width="1254" height="1254">
+                <figcaption class="mono">Fig. 01 — The author</figcaption>
+            </figure>
 
-                <div class="timeline-item">
-                    <div class="time">2022 - Present</div>
-                    <div class="logo-wrapper"><img src="https://yt3.googleusercontent.com/cmOG202_w7Bx2F5rbAFQFt5vOtMh-A_kszgstyZPCpxbIT1UfXAcJDzvKrh-6YeUJGTASnSO7w=s160-c-k-c0x00ffffff-no-rj" alt="RL" class="company-logo"></div>
-                    <div class="detail">
-                        <h3>Web & Motion <span class="company">@ Richmond Live</span></h3>
-                        <p>Developing web projects and visuals for Richmond-Mahinda Lovers' Quarrel.</p>
-                    </div>
-                </div>
+            <div class="open-foot">
+                <p class="open-line reveal">A creative technologist moving between <em>the edit suite</em>, <em>the LED wall</em> and <em>the browser</em> — and designing for whatever screen the idea lands on.</p>
 
-                <div class="timeline-item">
-                    <div class="time">2022 - Present</div>
-                    <div class="logo-wrapper"><img src="./img/binaru.jpg" alt="Binaru" class="company-logo"></div>
-                    <div class="detail">
-                        <h3>Main Video Editor <span class="company">@ Binaru Productions</span></h3>
-                        <p>Focusing on event coverage and music videos like Omiru Sandira.</p>
-                    </div>
-                </div>
+                <ol class="toc mono reveal" aria-label="Contents">
+                    <li><a href="#the-cut"><span>I</span>The Cut<b>2022</b></a></li>
+                    <li><a href="#the-stage"><span>II</span>The Stage<b>2025</b></a></li>
+                    <li><a href="#the-screen"><span>III</span>The Screen<b>2022—</b></a></li>
+                    <li><a href="#the-feed"><span>IV</span>The Feed<b>2025</b></a></li>
+                    <li><a href="#credits"><span>V</span>Credits<b>Now</b></a></li>
+                </ol>
             </div>
-        </div>
-    </section>
 
-    <section id="web" class="section gray-bg">
-        <div class="section-container">
-            <h2 class="section-label">03 // Web Builds</h2>
-            <div class="web-gallery">
+            <a href="#prologue" class="open-cue mono">Scroll to begin <span aria-hidden="true">↓</span></a>
+        </section>
 
-                <div class="web-card featured">
-                    <div class="browser-frame">
-                        <div class="browser-bar">
-                            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-                            <div class="browser-url">gobigonexperiences.com</div>
-                        </div>
-                        <div class="browser-screen">
-                            <iframe data-src="https://www.gobigonexperiences.com/" title="Goodstuff XPC live preview" loading="lazy" tabindex="-1"></iframe>
-                            <button class="screen-overlay" type="button"><span>Click to explore</span></button>
-                        </div>
-                    </div>
-                    <div class="project-meta web-meta">
-                        <div>
-                            <h3>Goodstuff XPC</h3>
-                            <p>Experience Company // Brand Website</p>
-                        </div>
-                        <a class="watch-link" href="https://www.gobigonexperiences.com/" target="_blank" rel="noopener">Visit Site ↗</a>
-                    </div>
+        <!-- ============ PROLOGUE ============ -->
+        <section id="prologue" class="prologue" data-chapter="00" data-title="Prologue">
+            <p class="kicker mono">00 — Prologue</p>
+            <p class="statement" id="statement">I started in 2022 as an editor, cutting music videos and event films frame by frame. Then the frames got bigger — stages, LED walls, whole 3D worlds. Then they became something you could touch: websites, and a real-time VJ engine I built myself. Different screens, same question every time: <em>how should this feel when it reaches people?</em></p>
+
+            <dl class="facts">
+                <div class="reveal"><dt class="mono">Since</dt><dd>2022</dd></div>
+                <div class="reveal"><dt class="mono">Studios &amp; teams</dt><dd>05</dd></div>
+                <div class="reveal"><dt class="mono">Live websites</dt><dd>05</dd></div>
+                <div class="reveal"><dt class="mono">Studying</dt><dd>Animation &amp; VFX, <em>AMDT</em></dd></div>
+            </dl>
+        </section>
+
+        <!-- ============ I · THE CUT ============ -->
+        <section id="the-cut" class="chapter" data-chapter="I" data-title="The Cut">
+            <header class="ch-head">
+                <span class="ch-num reveal" aria-hidden="true">I</span>
+                <div class="ch-title">
+                    <p class="kicker mono reveal">Chapter One · 2022 —</p>
+                    <h2 class="reveal">The <em>Cut</em></h2>
                 </div>
-
-                <div class="web-card">
-                    <div class="browser-frame">
-                        <div class="browser-bar">
-                            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-                            <div class="browser-url">adoxgaming.com</div>
-                        </div>
-                        <div class="browser-screen">
-                            <iframe data-src="https://www.adoxgaming.com/" title="ADOX Gaming live preview" loading="lazy" tabindex="-1"></iframe>
-                            <button class="screen-overlay" type="button"><span>Click to explore</span></button>
-                        </div>
-                    </div>
-                    <div class="project-meta web-meta">
-                        <div>
-                            <h3>ADOX Gaming</h3>
-                            <p>Gaming Brand // Landing Site</p>
-                        </div>
-                        <a class="watch-link" href="https://www.adoxgaming.com/" target="_blank" rel="noopener">Visit Site ↗</a>
-                    </div>
+                <div class="ch-intro reveal">
+                    <p>It started in the timeline. As main editor at <strong>Binaru Productions</strong> I learned pacing, colour and restraint on music videos and event coverage — where a single frame too long can lose the room.</p>
+                    <ul class="ch-tags mono"><li>Editing</li><li>Colour</li><li>Compositing</li><li>Documentary</li></ul>
                 </div>
+            </header>
 
-                <div class="web-card">
-                    <div class="browser-frame">
-                        <div class="browser-bar">
-                            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-                            <div class="browser-url">run4coffee.com</div>
-                        </div>
-                        <div class="browser-screen">
-                            <iframe data-src="https://run4coffee.com/" title="Run For Coffee live preview" loading="lazy" tabindex="-1"></iframe>
-                            <button class="screen-overlay" type="button"><span>Click to explore</span></button>
-                        </div>
+            <div class="cut-grid">
+                <article class="work w-feature reveal">
+                    <button class="frame play" type="button" data-yt="IuHhWJdRCzs" aria-label="Play Guththilayaneni music video">
+                        <img src="img/guththilayaneni.webp" alt="" loading="lazy">
+                        <span class="play-btn mono">▶ Play</span>
+                    </button>
+                    <div class="work-cap">
+                        <span class="mono">I.01</span>
+                        <h3>Guththilayaneni</h3>
+                        <p>Music video — edit &amp; colour grade.</p>
                     </div>
-                    <div class="project-meta web-meta">
-                        <div>
-                            <h3>Run For Coffee</h3>
-                            <p>Community // Event Website</p>
-                        </div>
-                        <a class="watch-link" href="https://run4coffee.com/" target="_blank" rel="noopener">Visit Site ↗</a>
-                    </div>
-                </div>
+                </article>
 
-                <div class="web-card">
-                    <div class="browser-frame">
-                        <div class="browser-bar">
-                            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-                            <div class="browser-url">kidscardgame.netlify.app</div>
-                        </div>
-                        <div class="browser-screen">
-                            <iframe data-src="https://kidscardgame.netlify.app/" title="Kids Card Game live preview" loading="lazy" tabindex="-1"></iframe>
-                            <button class="screen-overlay" type="button"><span>Click to explore</span></button>
-                        </div>
-                    </div>
-                    <div class="project-meta web-meta">
-                        <div>
-                            <h3>Kids Card Game</h3>
-                            <p>Interactive Web Game</p>
-                        </div>
-                        <a class="watch-link" href="https://kidscardgame.netlify.app/" target="_blank" rel="noopener">Visit Site ↗</a>
-                    </div>
-                </div>
-
-                <div class="web-card">
-                    <div class="browser-frame">
-                        <div class="browser-bar">
-                            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-                            <div class="browser-url">hirund.github.io/Keepsake_Weddings</div>
-                        </div>
-                        <div class="browser-screen">
-                            <iframe data-src="https://hirund.github.io/Keepsake_Weddings/" title="Keepsake Weddings live preview" loading="lazy" tabindex="-1"></iframe>
-                            <button class="screen-overlay" type="button"><span>Click to explore</span></button>
-                        </div>
-                    </div>
-                    <div class="project-meta web-meta">
-                        <div>
-                            <h3>Keepsake Weddings</h3>
-                            <p>Wedding Studio // Portfolio Site</p>
-                        </div>
-                        <a class="watch-link" href="https://hirund.github.io/Keepsake_Weddings/" target="_blank" rel="noopener">Visit Site ↗</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="section">
-        <div class="section-container">
-            <h2 class="section-label">04 // Motion & Video Work</h2>
-            <div class="project-gallery">
-                
-                <div class="project-card">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/EqE9njelPPk" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="project-meta">
-                        <h3>Matara Central Prefects' Day</h3>
-                        <p>Compositing & Motion Design</p>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/efsaYkwLvmQ" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="project-meta">
-                        <h3>Science Day Animation</h3>
-                        <p>UE5 / Greek Mythology Theme</p>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/2k_JrEJnFBw" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="project-meta">
-                        <h3>Mirage Band Intro</h3>
-                        <p>VFX & Motion Graphics</p>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/IuHhWJdRCzs" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="project-meta">
-                        <h3>Guththilayaneni Music Video</h3>
-                        <p>Editing & Color Grading</p>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/HbuKKbStrWQ" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="project-meta">
-                        <h3>Cadenza '24 Project</h3>
-                        <p>Immersive 3D Experience</p>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/AKzaKugi7AQ" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="project-meta">
+                <article class="work w-left reveal">
+                    <button class="frame play" type="button" data-yt="AKzaKugi7AQ" aria-label="Play Science Society documentary">
+                        <img data-thumb="AKzaKugi7AQ" alt="" loading="lazy">
+                        <span class="play-btn mono">▶ Play</span>
+                    </button>
+                    <div class="work-cap">
+                        <span class="mono">I.02</span>
                         <h3>Science Society Documentary</h3>
-                        <p>Cinematic Storytelling</p>
+                        <p>Cinematic storytelling.</p>
+                    </div>
+                </article>
+
+                <article class="work w-right reveal">
+                    <button class="frame play" type="button" data-yt="EqE9njelPPk" aria-label="Play Matara Central Prefects' Day film">
+                        <img data-thumb="EqE9njelPPk" alt="" loading="lazy">
+                        <span class="play-btn mono">▶ Play</span>
+                    </button>
+                    <div class="work-cap">
+                        <span class="mono">I.03</span>
+                        <h3>Matara Central Prefects' Day</h3>
+                        <p>Compositing &amp; motion design.</p>
+                    </div>
+                </article>
+            </div>
+
+            <blockquote class="pull reveal">
+                <p>“Editing taught me that design is mostly <em>timing</em>.”</p>
+            </blockquote>
+        </section>
+
+        <!-- ============ II · THE STAGE ============ -->
+        <section id="the-stage" class="chapter stage" data-chapter="II" data-title="The Stage">
+            <header class="ch-head">
+                <span class="ch-num reveal" aria-hidden="true">II</span>
+                <div class="ch-title">
+                    <p class="kicker mono reveal">Chapter Two · 2025 —</p>
+                    <h2 class="reveal">The <em>Stage</em></h2>
+                </div>
+                <div class="ch-intro reveal">
+                    <p>At <strong>Fern (Events)</strong> the canvas became a room. I design stages and visualise them in Unreal Engine 5 so clients can walk the room before it exists, design motion for LED walls, then run those screens live on the night.</p>
+                    <ul class="ch-tags mono"><li>3D Previz</li><li>Unreal Engine 5</li><li>LED Wall</li><li>VJ</li></ul>
+                </div>
+            </header>
+
+            <article class="screen-wall reveal">
+                <div class="wall">
+                    <video class="loop" data-src="img/INTRO_2.mp4" muted loop playsinline preload="none" aria-hidden="true"></video>
+                    <div class="wall-ui mono">
+                        <span><i class="live"></i>Output 01 — LED</span>
+                        <span>1920 × 1080</span>
                     </div>
                 </div>
+                <div class="wall-cap">
+                    <div>
+                        <span class="mono">II.01</span>
+                        <h3>Science Day — <em>a Greek myth in UE5</em></h3>
+                    </div>
+                    <p>A temple world built and rendered in Unreal Engine 5 for the school's Science Day, designed to play on the stage screen.</p>
+                    <button class="text-btn mono play" type="button" data-yt="efsaYkwLvmQ">Watch the full film ▶</button>
+                </div>
+            </article>
 
-            </div>
-        </div>
-    </section>
-
-<section id="social-work" class="section gray-bg">
-    <div class="section-container">
-        <h2 class="section-label">05 // Short-Form Edits</h2>
-        <div class="social-grid">
-            
-            <div class="social-card">
-                <div class="embed-placeholder">
-                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DSgxnxQEZK2/" data-instgrm-version="14"></blockquote>
+            <div class="previz">
+                <div class="sub-head reveal">
+                    <p class="kicker mono">Stage design &amp; previz</p>
+                    <h3>Built in <em>Unreal Engine 5</em> before a single truss goes up.</h3>
+                    <p>Stages I designed, then rendered as previz films for client sign-off and for posting.</p>
                 </div>
-                <div class="project-meta">
-                    <h3>Stephanie Siriwardhane</h3>
-                    <p>Reel Editing & Color</p>
-                </div>
-            </div>
-
-            <div class="social-card">
-                <div class="embed-placeholder">
-                    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@project.prog.ofc/video/7585924369969335572" data-video-id="7585924369969335572"><section><a target="_blank" href="https://www.tiktok.com/@project.prog.ofc">@project.prog.ofc</a></section></blockquote>
-                </div>
-                <div class="project-meta">
-                    <h3>Project Prog</h3>
-                    <p>Short-form Storytelling</p>
-                    <a class="watch-link" href="https://www.tiktok.com/@project.prog.ofc/video/7585924369969335572" target="_blank" rel="noopener">Watch on TikTok ↗</a>
-                </div>
-            </div>
-
-            <div class="social-card">
-                <div class="embed-placeholder">
-                    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@gallelitfest/video/7485437111500393746" data-video-id="7485437111500393746"><section><a target="_blank" href="https://www.tiktok.com/@gallelitfest">@gallelitfest</a></section></blockquote>
-                </div>
-                <div class="project-meta">
-                    <h3>GLF // Volunteers</h3>
-                    <p>Event Coverage</p>
-                    <a class="watch-link" href="https://www.tiktok.com/@gallelitfest/video/7485437111500393746" target="_blank" rel="noopener">Watch on TikTok ↗</a>
-                </div>
-            </div>
-
-            <div class="social-card">
-                <div class="embed-placeholder">
-                    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@fems.lk/video/7509458199213280519" data-video-id="7509458199213280519"><section><a target="_blank" href="https://www.tiktok.com/@fems.lk">@fems.lk</a></section></blockquote>
-                </div>
-                <div class="project-meta">
-                    <h3>Fems // Rangi Fernando</h3>
-                    <p>Brand Collaboration</p>
-                    <a class="watch-link" href="https://www.tiktok.com/@fems.lk/video/7509458199213280519" target="_blank" rel="noopener">Watch on TikTok ↗</a>
-                </div>
-            </div>
-
-            <div class="social-card">
-                <div class="embed-placeholder">
-                    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@goyasrilanka/video/7497211543969385735" data-video-id="7497211543969385735"><section><a target="_blank" href="https://www.tiktok.com/@goyasrilanka">@goyasrilanka</a></section></blockquote>
-                </div>
-                <div class="project-meta">
-                    <h3>Goya // Bad Girl</h3>
-                    <p>Viral Marketing</p>
-                    <a class="watch-link" href="https://www.tiktok.com/@goyasrilanka/video/7497211543969385735" target="_blank" rel="noopener">Watch on TikTok ↗</a>
+                <div class="previz-grid">
+                <article class="work pv-feature reveal">
+                    <button class="frame play" type="button" data-yt="yCoRXXmKeoI" aria-label="Play Event Previz Showreel">
+                        <img data-thumb="yCoRXXmKeoI" alt="" loading="lazy">
+                        <span class="play-btn mono">▶ Play</span>
+                    </button>
+                    <div class="work-cap">
+                        <span class="mono">II.02</span>
+                        <h3>Event Previz Showreel</h3>
+                        <p>Stage design &amp; previz — Unreal Engine 5.</p>
+                    </div>
+                </article>
+                <article class="work reveal">
+                    <button class="frame play" type="button" data-yt="3KD_u159F84" aria-label="Play Grove Island — Virticle by Jetwing">
+                        <img data-thumb="3KD_u159F84" alt="" loading="lazy">
+                        <span class="play-btn mono">▶ Play</span>
+                    </button>
+                    <div class="work-cap">
+                        <span class="mono">II.03</span>
+                        <h3>Grove Island — Virticle by Jetwing</h3>
+                        <p>Event stage previz — Unreal Engine 5.</p>
+                    </div>
+                </article>
+                <article class="work reveal">
+                    <button class="frame play" type="button" data-yt="MWL6ZoW5mBs" aria-label="Play Dusk to Dawn">
+                        <img data-thumb="MWL6ZoW5mBs" alt="" loading="lazy">
+                        <span class="play-btn mono">▶ Play</span>
+                    </button>
+                    <div class="work-cap">
+                        <span class="mono">II.04</span>
+                        <h3>Dusk to Dawn</h3>
+                        <p>Show reel — stage previz in Unreal Engine 5.</p>
+                    </div>
+                </article>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
 
-<script async src="//www.instagram.com/embed.js"></script>
-<script async src="https://www.tiktok.com/embed.js"></script>
-
-<section id="rates" class="section">
-    <div class="section-container">
-        <h2 class="section-label">06 // Rate Card</h2>
-        <div class="rates-grid">
-            
-            <div class="rate-card">
-                <div class="rate-info">
-                    <h3>Basic Social Edit</h3>
-                    <p>Clean TikTok / Reel with basic transitions and subtitles.</p>
-                </div>
-                <div class="price">LKR 3,500<span>/project</span></div>
+            <div class="sub-head reveal">
+                <p class="kicker mono">Motion graphics &amp; live visuals</p>
+                <h3>Made for the <em>big screen</em> behind the band.</h3>
             </div>
 
-            <div class="rate-card">
-                <div class="rate-info">
-                    <h3>Premium Storytelling</h3>
-                    <p>Advanced edits (Project Prog style) with motion graphics & sound design.</p>
+            <div class="stage-grid">
+                <article class="work reveal">
+                    <button class="frame play" type="button" data-yt="2k_JrEJnFBw" aria-label="Play Mirage band intro">
+                        <video class="loop" data-src="img/aband intro_1.mp4" muted loop playsinline preload="none" aria-hidden="true"></video>
+                        <span class="play-btn mono">▶ Play</span>
+                    </button>
+                    <div class="work-cap">
+                        <span class="mono">II.05</span>
+                        <h3>Mirage — Band Intro</h3>
+                        <p>VFX &amp; motion graphics for the band's opening.</p>
+                    </div>
+                </article>
+
+                <article class="work reveal">
+                    <button class="frame play" type="button" data-yt="Nv3NZupgNJ4" aria-label="Play Logo Reveals &amp; Loops">
+                        <img data-thumb="Nv3NZupgNJ4" alt="" loading="lazy">
+                        <span class="play-btn mono">▶ Play</span>
+                    </button>
+                    <div class="work-cap">
+                        <span class="mono">II.06</span>
+                        <h3>Logo Reveals &amp; Loops</h3>
+                        <p>Motion graphics showreel — reveals and LED loops.</p>
+                    </div>
+                </article>
+
+                <article class="work reveal">
+                    <button class="frame play" type="button" data-yt="HbuKKbStrWQ" aria-label="Play Cadenza '24 project">
+                        <img data-thumb="HbuKKbStrWQ" alt="" loading="lazy">
+                        <span class="play-btn mono">▶ Play</span>
+                    </button>
+                    <div class="work-cap">
+                        <span class="mono">II.07</span>
+                        <h3>Cadenza '24</h3>
+                        <p>An immersive 3D experience for the event.</p>
+                    </div>
+                </article>
+
+                <article class="work engine reveal">
+                    <div class="frame engine-frame">
+                        <canvas id="engine" aria-hidden="true"></canvas>
+                        <span class="engine-label mono">live · generative</span>
+                    </div>
+                    <div class="work-cap">
+                        <span class="mono">II.08</span>
+                        <h3>Custom VJ Engine</h3>
+                        <p>My own node-based real-time visuals tool, built for live shows. This canvas is a small sketch of how it thinks.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ============ III · THE SCREEN ============ -->
+        <section id="the-screen" class="chapter paper" data-chapter="III" data-title="The Screen">
+            <header class="ch-head">
+                <span class="ch-num reveal" aria-hidden="true">III</span>
+                <div class="ch-title">
+                    <p class="kicker mono reveal">Chapter Three · 2022 —</p>
+                    <h2 class="reveal">The <em>Screen</em></h2>
                 </div>
-                <div class="price">LKR 10,000<span>/project</span></div>
+                <div class="ch-intro reveal">
+                    <p>Running alongside it all: the web. It began with <strong>Richmond Live</strong> and now it's my full-time work at <strong>Goodstuff</strong>, where I design and build the studio's site and tools. Each one below is live — pick one and explore it.</p>
+                    <ul class="ch-tags mono"><li>UI / UX</li><li>Web Design</li><li>React</li><li>Front-end</li></ul>
+                </div>
+            </header>
+
+            <div class="sites">
+                <ol class="site-list" role="tablist" aria-label="Websites">
+                    <li><button role="tab" aria-selected="true" data-url="https://www.gobigonexperiences.com/" data-label="gobigonexperiences.com">
+                        <span class="mono">III.01</span><b>Goodstuff XPC</b><small>Experience company — brand site</small></button></li>
+                    <li><button role="tab" aria-selected="false" data-url="https://www.adoxgaming.com/" data-label="adoxgaming.com">
+                        <span class="mono">III.02</span><b>ADOX Gaming</b><small>Gaming brand — landing site</small></button></li>
+                    <li><button role="tab" aria-selected="false" data-url="https://run4coffee.com/" data-label="run4coffee.com">
+                        <span class="mono">III.03</span><b>Run For Coffee</b><small>Non-profit running charity — website</small></button></li>
+                    <li><button role="tab" aria-selected="false" data-url="https://kidscardgame.netlify.app/" data-label="kidscardgame.netlify.app">
+                        <span class="mono">III.04</span><b>Kids Card Game</b><small>Interactive web game</small></button></li>
+                    <li><button role="tab" aria-selected="false" data-url="https://hirund.github.io/Keepsake_Weddings/" data-label="hirund.github.io/Keepsake_Weddings">
+                        <span class="mono">III.05</span><b>Keepsake Weddings</b><small>Wedding studio — portfolio</small></button></li>
+                </ol>
+
+                <div class="browser reveal" role="tabpanel">
+                    <div class="browser-bar">
+                        <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                        <span class="browser-url mono" id="site-url">gobigonexperiences.com</span>
+                        <a class="browser-open mono" id="site-open" href="https://www.gobigonexperiences.com/" target="_blank" rel="noopener">Open ↗</a>
+                    </div>
+                    <div class="browser-screen" id="site-screen">
+                        <iframe id="site-frame" title="Live website preview" tabindex="-1"></iframe>
+                        <button class="screen-overlay" type="button"><span class="mono">Click to explore</span></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ IV · THE FEED ============ -->
+        <section id="the-feed" class="chapter" data-chapter="IV" data-title="The Feed">
+            <header class="ch-head">
+                <span class="ch-num reveal" aria-hidden="true">IV</span>
+                <div class="ch-title">
+                    <p class="kicker mono reveal">Chapter Four · 2025 —</p>
+                    <h2 class="reveal">The <em>Feed</em></h2>
+                </div>
+                <div class="ch-intro reveal">
+                    <p>The smallest screen is the hardest. At <strong>Realtalk Media</strong> I edit for brands like Goya, Gold, Kumarika and ITN — stories that have about a second and a half to earn the next swipe.</p>
+                    <ul class="ch-tags mono"><li>Short-form</li><li>Brand</li><li>Sound</li><li>Subtitles</li></ul>
+                </div>
+            </header>
+
+            <div class="feed" tabindex="0" aria-label="Short-form edits, scroll sideways">
+                <article class="reel reveal" data-embed="https://www.tiktok.com/player/v1/7497211543969385735?music_info=0&description=0" data-link="https://www.tiktok.com/@goyasrilanka/video/7497211543969385735">
+                    <button class="reel-face" type="button" data-n="01">
+                        <span class="mono">IV.01 · TikTok</span>
+                        <b>Goya</b><em>Bad Girl</em>
+                        <small class="mono">Viral marketing</small>
+                        <span class="reel-play mono">▶ Play</span>
+                    </button>
+                </article>
+                <article class="reel reveal" data-embed="https://www.tiktok.com/player/v1/7585924369969335572?music_info=0&description=0" data-link="https://www.tiktok.com/@project.prog.ofc/video/7585924369969335572">
+                    <button class="reel-face" type="button" data-n="02">
+                        <span class="mono">IV.02 · TikTok</span>
+                        <b>Project Prog</b><em>Storytelling</em>
+                        <small class="mono">Short-form narrative</small>
+                        <span class="reel-play mono">▶ Play</span>
+                    </button>
+                </article>
+                <article class="reel reveal" data-embed="https://www.instagram.com/reel/DSgxnxQEZK2/embed" data-link="https://www.instagram.com/reel/DSgxnxQEZK2/">
+                    <button class="reel-face" type="button" data-n="03">
+                        <span class="mono">IV.03 · Instagram</span>
+                        <b>Stephanie Siriwardhane</b><em>Reel</em>
+                        <small class="mono">Edit &amp; colour</small>
+                        <span class="reel-play mono">▶ Play</span>
+                    </button>
+                </article>
+                <article class="reel reveal" data-embed="https://www.tiktok.com/player/v1/7509458199213280519?music_info=0&description=0" data-link="https://www.tiktok.com/@fems.lk/video/7509458199213280519">
+                    <button class="reel-face" type="button" data-n="04">
+                        <span class="mono">IV.04 · TikTok</span>
+                        <b>Fems</b><em>× Rangi Fernando</em>
+                        <small class="mono">Brand collaboration</small>
+                        <span class="reel-play mono">▶ Play</span>
+                    </button>
+                </article>
+                <article class="reel reveal" data-embed="https://www.tiktok.com/player/v1/7485437111500393746?music_info=0&description=0" data-link="https://www.tiktok.com/@gallelitfest/video/7485437111500393746">
+                    <button class="reel-face" type="button" data-n="05">
+                        <span class="mono">IV.05 · TikTok</span>
+                        <b>Galle Lit Fest</b><em>Volunteers</em>
+                        <small class="mono">Event coverage</small>
+                        <span class="reel-play mono">▶ Play</span>
+                    </button>
+                </article>
+            </div>
+            <p class="feed-hint mono" aria-hidden="true">← Drag / scroll →</p>
+        </section>
+
+        <!-- ============ V · CREDITS ============ -->
+        <section id="credits" class="chapter credits" data-chapter="V" data-title="Credits">
+            <header class="credits-head">
+                <p class="kicker mono reveal">Chapter Five · Now</p>
+                <h2 class="reveal">The <em>Credits</em></h2>
+            </header>
+
+            <div class="roll">
+                <div class="roll-group reveal">
+                    <h3 class="mono">Currently</h3>
+                    <dl>
+                        <div><dt>Experience Intern · Full-time</dt><dd><img class="roll-logo" src="img/goodstuff-xpc.png" alt="Goodstuff XPC" width="723" height="113" loading="lazy"> <span class="mono">2026 —</span><small>Websites, video edits and anything that elevates experiences — digital and physical.</small></dd></div>
+                        <div><dt>Co-founder · 3D Previz &amp; VJ</dt><dd>Fern <span class="mono">2025 —</span></dd></div>
+                        <div><dt>Freelance Video Editor</dt><dd>Realtalk Media <span class="mono">2025 —</span></dd></div>
+                        <div><dt>Live Production Crew</dt><dd>Richmond Live <span class="mono">2022 —</span></dd></div>
+                        <div><dt>Main Video Editor</dt><dd>Binaru Productions <span class="mono">2022 – 2025</span></dd></div>
+                    </dl>
+                </div>
+
+                <div class="roll-group reveal">
+                    <h3 class="mono">Tools of the trade</h3>
+                    <dl>
+                        <div><dt>Design &amp; build</dt><dd>UI / UX · HTML / CSS · JavaScript · React</dd></div>
+                        <div><dt>Motion &amp; edit</dt><dd>After Effects · Premiere Pro</dd></div>
+                        <div><dt>3D &amp; real-time</dt><dd>Blender · Unreal Engine 5</dd></div>
+                        <div><dt>Live</dt><dd>Resolume · LED wall ops · custom VJ engine</dd></div>
+                    </dl>
+                </div>
+
+                <div class="roll-group reveal">
+                    <h3 class="mono">Education</h3>
+                    <dl>
+                        <div><dt>HND → BA (Hons) Animation &amp; VFX</dt><dd>AMDT, Sri Lanka · Falmouth University, UK <span class="mono">Year 2</span></dd></div>
+                        <div><dt>G.C.E. Advanced Level</dt><dd>Richmond College, Galle <span class="mono">2025</span></dd></div>
+                    </dl>
+                </div>
+
+                <details class="rates reveal">
+                    <summary><span class="mono">Freelance</span> Commission rates <i aria-hidden="true">+</i></summary>
+                    <table>
+                        <tbody>
+                            <tr><th scope="row">Basic social edit<small>Clean TikTok / Reel, transitions &amp; subtitles</small></th><td>LKR 3,500 <span class="mono">/ project</span></td></tr>
+                            <tr><th scope="row">Premium storytelling<small>Motion graphics &amp; sound design</small></th><td>LKR 10,000 <span class="mono">/ project</span></td></tr>
+                            <tr><th scope="row">Web development<small>Responsive landing pages &amp; portfolios</small></th><td>LKR 25,000 <span class="mono">/ from</span></td></tr>
+                            <tr><th scope="row">3D static visual<small>Product or environment render</small></th><td>LKR 30,000 <span class="mono">/ image</span></td></tr>
+                            <tr><th scope="row">3D video / render<small>Environments, event previz, product animation</small></th><td>LKR 35,000 <span class="mono">/ project</span></td></tr>
+                            <tr><th scope="row">Something else<small>Long-form, branding, bespoke</small></th><td><a href="#contact">Let's talk</a></td></tr>
+                        </tbody>
+                    </table>
+                </details>
+            </div>
+        </section>
+
+        <!-- ============ CONTACT ============ -->
+        <section id="contact" class="contact" data-chapter="→" data-title="Next Scene">
+            <p class="kicker mono reveal">To be continued</p>
+            <h2 class="contact-head reveal">Let's make<br>the <em>next scene.</em></h2>
+
+            <div class="contact-actions reveal">
+                <a class="btn-solid" href="mailto:hirundwickramasinghe@gmail.com">hirundwickramasinghe@gmail.com</a>
+                <a class="btn-line" href="https://wa.me/94768088170?text=Hi%20Hirun!%20I%20saw%20your%20portfolio%20and..." target="_blank" rel="noopener">WhatsApp ↗</a>
             </div>
 
-            <div class="rate-card">
-                <div class="rate-info">
-                    <h3>Web Development</h3>
-                    <p>Modern, responsive landing pages or portfolios.</p>
-                </div>
-                <div class="price">LKR 25,000<span>/start</span></div>
-            </div>
+            <footer class="foot mono">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/hirun-dilshan-260a61273/" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <li><a href="https://github.com/HirunD" target="_blank" rel="noopener">GitHub</a></li>
+                    <li><a href="https://www.instagram.com/_hirund/" target="_blank" rel="noopener">Instagram</a></li>
+                    <li><a href="cv/">CV</a></li>
+                    <li><a href="tel:+94768088170">+94 76 808 8170</a></li>
+                </ul>
+                <p>Designed &amp; built by hand in Galle — © <span id="year">2026</span></p>
+                <p class="fin">Fin.</p>
+            </footer>
+        </section>
+    </main>
 
-            <div class="rate-card">
-                <div class="rate-info">
-                    <h3>3D Static Visual</h3>
-                    <p>High-end 3D product or environment renders (Static).</p>
-                </div>
-                <div class="price">LKR 30,000<span>/image</span></div>
-            </div>
-
-            <div class="rate-card">
-                <div class="rate-info">
-                    <h3>3D Video / Render</h3>
-                    <p>Immersive 3D environments, event previz, or product animations.</p>
-                </div>
-                <div class="price">LKR 35,000<span>/project</span></div>
-            </div>
-
-            <div class="rate-card custom">
-                <div class="rate-info">
-                    <h3>Custom Solutions</h3>
-                    <p>Bespoke projects, long-form content, or branding packages.</p>
-                </div>
-                <a href="https://wa.me/94768088170" class="price-link">Contact Me</a>
-            </div>
-
-        </div>
-    </div>
-</section>
-    <section id="contact" class="section contact-section">
-    <div class="section-container">
-        <h2 class="section-label">07 // Get In Touch</h2>
-        <div class="cta-box">
-            <h2 class="cta-heading">Let's build something <br><span>Extraordinary.</span></h2>
-            <p>Ready to start? Message me directly on WhatsApp for the fastest response.</p>
-            
-            <a href="https://wa.me/94768088170?text=Hi%20Hirun!%20I%20saw%20your%20portfolio%20and..." class="main-cta-btn" target="_blank">
-                Chat on WhatsApp
-            </a>
-            
-            <div class="footer-details">
-                <div class="foot-col">
-                    <h4>Social</h4>
-                    <a href="https://github.com/HirunD" target="_blank">GitHub</a>
-                    <a href="https://www.instagram.com/_hirund/" target="_blank">Instagram</a>
-                </div>
-                <div class="foot-col">
-                    <h4>Direct</h4>
-                    <p>+94 76 808 8170</p>
-                    <a href="mailto:hirundwickramasinghe@gmail.com">Email Me</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    <!-- Video player -->
+    <dialog class="player" id="player" aria-label="Video player">
+        <button class="player-close mono" type="button" id="player-close">Close ✕</button>
+        <div class="player-frame" id="player-frame"></div>
+    </dialog>
 
     <script src="script.js"></script>
 </body>
